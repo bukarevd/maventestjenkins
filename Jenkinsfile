@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh "mvn test -f maventestjenkins"                
+                sh "mvn test"                
             }
         }
         stage('Deploy') { 
             steps {
-                sh "mvn package -f maventestjenkins"                
+                sh "mvn package"                
  
             }
         }
