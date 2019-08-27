@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Starting') {
 	    steps {
-	    	echo 'Starting ......'
+	    	echo 'Starting build #${env.BUILD_NUMBER}'
 	    }	
 	}
 	stage('clone git repo') { 
